@@ -1,0 +1,11 @@
+.git/
+.hallmark/
+artifacts/
+docs/
+scripts/
+node_modules/
+dist/
+.env*
+*.log
+*.tsbuildinfo
+bun.lock

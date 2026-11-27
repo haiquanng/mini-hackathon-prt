@@ -1,0 +1,11 @@
+import {chromium} from '@playwright/test';
+const browser = await chromium.launch({executablePath:'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',headless:true});
+const page=await browser.newPage({viewport:{width:1440,height:900},reducedMotion:'reduce'});
+page.on('pageerror', e=>console.log('ERROR',e.message));
+await page.goto('http://localhost:4173/',{waitUntil:'networkidle'});
+await page.locator('.scene-canvas canvas').waitFor();
+await page.screenshot({path:'artifacts/v2-desktop.png'});
+await page.setViewportSize({width:390,height:844});
+await page.screenshot({path:'artifacts/v2-mobile.png'});
+console.log(await page.locator('.map-pin,.map-boba,.destination-card,.bottom-nav').evaluateAll(els=>els.map(e=>({text:e.textContent,box:e.getBoundingClientRect().toJSON()}))));
+await browser.close();

@@ -1,0 +1,57 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": "vite",
+  "installCommand": "npm ci",
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "rewrites": [
+    {
+      "source": "/di-den",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/dia-diem/:id",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/vi-tri",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/anh",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/anh-mau",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/ghim-anh",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/hanh-trinh",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/da-luu",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/ve-ung-dung",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/ve-sunshine",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/nhan-dien",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/xac-nhan-vi-tri",
+      "destination": "/index.html"
+    }
+  ]
+}

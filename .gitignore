@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.env*
+!.env.example
+*.tsbuildinfo
+artifacts/
+.hallmark/
+.vercel/
+bun.lock
+*.log
+.DS_Store
