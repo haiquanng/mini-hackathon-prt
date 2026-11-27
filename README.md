@@ -4,6 +4,10 @@ Bản trải nghiệm UI/UX tiếng Việt cho VinUni AR Map, ưu tiên điện 
 
 Repo prototype PWA của team Sunshine. Các kết quả định vị và tuyến đường là dữ liệu mô phỏng để thử luồng sử dụng; chưa nối backend nhận diện AI.
 
+**Dùng thử:** https://vinuni-ar.vercel.app · [Bộ ảnh mẫu](https://vinuni-ar.vercel.app/anh-mau)
+
+Vercel project `vinuni-ar` được nối với repo này; push lên `main` sẽ tạo bản production mới. Build dùng Node.js 22, `npm ci`, `npm run build`, thư mục xuất `dist/`. Không cần API key cho bản mock.
+
 ## Chạy ngay
 
 Yêu cầu Node.js 22.12 trở lên (đã chạy với Node 22.17.1).
